@@ -1,15 +1,26 @@
 import { Outlet } from 'react-router-dom'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import ResumeProfile from '@/components/resume-profile'
+import DesktopMenu from '@/components/desktop-menu'
+import { LogOut } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function AppLayout() {
   return (
     <>
-      <div className="w-full flex p-3 bg-zinc-950 border-b border-b-zinc-500">
-        <div className="w-full max-w-[300px] flex justify-start sm:justify-center">
+      <div className="w-full flex p-3 bg-zinc-950 border-b border-b-zinc-500 border-opacity-50">
+        <div className="w-full max-w-[300px] flex justify-center">
           <span className="text-2xl italic font-extrabold">ggdeck.</span>
         </div>
-        <div className="flex-1 flex justify-end"></div>
+        <div className="flex-1 flex w-full px-8 justify-between items-center">
+          <DesktopMenu />
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 rounded-xl"
+          >
+            <LogOut size={16} /> Sair
+          </Button>
+        </div>
       </div>
       <div className="min-h-screen flex flex-col sm:flex-row">
         <aside className="bg-zinc-900 w-full p-8 flex flex-col items-center gap-4 sm:w-[300px]">
