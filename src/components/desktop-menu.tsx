@@ -9,7 +9,7 @@ import { Gamepad2, Home } from 'lucide-react'
 
 export default function DesktopMenu() {
   return (
-    <NavigationMenu className="w-full">
+    <NavigationMenu className="w-full hidden sm:flex">
       <NavigationMenuList className="flex gap-4 text-sm w-full">
         <NavigationMenuItem>
           <NavigationMenuLink className="flex items-center gap-2" href="/">

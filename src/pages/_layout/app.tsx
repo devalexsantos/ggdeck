@@ -4,6 +4,7 @@ import ResumeProfile from '@/components/resume-profile'
 import DesktopMenu from '@/components/desktop-menu'
 import { LogOut } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import MobileMenu from '@/components/mobile-menu'
 
 export default function AppLayout() {
   return (
@@ -12,11 +13,12 @@ export default function AppLayout() {
         <div className="w-full max-w-[300px] flex justify-center">
           <span className="text-2xl italic font-extrabold">ggdeck.</span>
         </div>
-        <div className="flex-1 flex w-full px-8 justify-between items-center">
+        <div className="flex-1 flex w-full px-8 justify-end items-center sm:justify-between">
           <DesktopMenu />
+          <MobileMenu />
           <Button
             variant="outline"
-            className="flex items-center gap-2 rounded-xl"
+            className="items-center gap-2 rounded-xl px-2 py-2 hidden sm:flex"
           >
             <LogOut size={16} /> Sair
           </Button>
