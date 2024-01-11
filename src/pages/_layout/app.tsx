@@ -36,7 +36,9 @@ export default function AppLayout() {
 
           <ResumeProfile />
         </aside>
-        <Outlet />
+        <div className="w-full overflow-x-hidden">
+          <Outlet />
+        </div>
       </div>
     </>
   )
