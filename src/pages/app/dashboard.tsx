@@ -10,25 +10,21 @@ export default function Dashboard() {
       slideChanged() {
         console.log('slide changed')
       },
-      loop: true,
-      slides: {
-        origin: 'center',
-      },
-      range: {
-        min: 20,
-      },
       breakpoints: {
         '(min-width: 100px)': {
-          slides: { perView: 1, origin: 'auto', spacing: -50 },
+          slides: { perView: 1, spacing: -90 },
         },
         '(min-width: 764px)': {
-          slides: { perView: 2, spacing: 1 },
+          slides: { perView: 2, spacing: 5 },
         },
         '(min-width: 986px)': {
-          slides: { perView: 3, spacing: 1 },
+          slides: { perView: 3, spacing: 5 },
+        },
+        '(min-width: 1246px)': {
+          slides: { perView: 4, spacing: 5 },
         },
         '(min-width: 1500px)': {
-          slides: { perView: 5, spacing: 1 },
+          slides: { perView: 6, spacing: 5 },
         },
       },
     },
@@ -72,22 +68,10 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="flex flex-col gap-2 items-center">
-          <div ref={sliderRef} className="keen-slider items-center">
-            <div className="keen-slider__slide">
-              <GameItem />
-            </div>
-            <div className="keen-slider__slide">
-              <GameItem />
-            </div>
-            <div className="keen-slider__slide">
-              <GameItem />
-            </div>
-            <div className="keen-slider__slide">
-              <GameItem />
-            </div>
-            <div className="keen-slider__slide">
-              <GameItem />
-            </div>
+          <div
+            ref={sliderRef}
+            className="keen-slider items-center flex justify-start"
+          >
             <div className="keen-slider__slide">
               <GameItem />
             </div>
