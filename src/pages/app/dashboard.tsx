@@ -12,7 +12,7 @@ export default function Dashboard() {
       },
       breakpoints: {
         '(min-width: 100px)': {
-          slides: { perView: 1, spacing: -90 },
+          slides: { perView: 1, spacing: -10 },
         },
         '(min-width: 764px)': {
           slides: { perView: 2, spacing: 5 },
@@ -21,10 +21,13 @@ export default function Dashboard() {
           slides: { perView: 3, spacing: 5 },
         },
         '(min-width: 1246px)': {
-          slides: { perView: 4, spacing: 5 },
+          slides: { perView: 4, spacing: -50 },
         },
         '(min-width: 1500px)': {
-          slides: { perView: 6, spacing: 5 },
+          slides: { perView: 5, spacing: -40 },
+        },
+        '(min-width: 1600px)': {
+          slides: { perView: 6, spacing: -40 },
         },
       },
     },
@@ -72,6 +75,60 @@ export default function Dashboard() {
             ref={sliderRef}
             className="keen-slider items-center flex justify-start"
           >
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
+            <div className="keen-slider__slide">
+              <GameItem />
+            </div>
             <div className="keen-slider__slide">
               <GameItem />
             </div>
