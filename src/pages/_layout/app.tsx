@@ -36,10 +36,7 @@ export default function AppLayout() {
                   <span className="font-bold">@alexsantos</span>
                   <div className="flex flex-col gap-2 sm:flex-row">
                     <span className="text-sm text-muted-foreground">
-                      Membro há: <strong>02 anos</strong>
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      Jogos zerados: <strong>32</strong>
+                      Jogos zerados em 2024: <strong>32 / 325</strong>
                     </span>
                   </div>
                 </div>
