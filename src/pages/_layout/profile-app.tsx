@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useParams } from 'react-router-dom'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import SocialLinks from '@/components/social-links-profile'
 import DesktopMenu from '@/components/desktop-menu'
@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button'
 import MobileMenu from '@/components/mobile-menu'
 
 export default function AppLayout() {
+  const { userId } = useParams()
+
   return (
     <>
       <div className="w-full flex p-3 bg-zinc-950 border-b border-b-zinc-500 border-opacity-50">
@@ -33,7 +35,7 @@ export default function AppLayout() {
                 </Avatar>
                 <div className="flex flex-col gap-1">
                   <span className="text-xl font-bold ">Alex Santos</span>
-                  <span className="font-bold">@alexsantos</span>
+                  <span className="font-bold">@{userId}</span>
                   <div className="flex flex-col gap-2 sm:flex-row">
                     <span className="text-sm text-muted-foreground">
                       Jogos zerados em 2024: <strong>32 / 325</strong>
