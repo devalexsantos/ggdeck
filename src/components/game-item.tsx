@@ -22,9 +22,8 @@ export default function GameItem() {
             9.8
           </span>
         </div>
-        <span className="flex items-center gap-2">
-          <span className="h-2 w-2 bg-yellow-400 rounded-full" />
-          <span className="text-yellow-400 text-sm">Em andamento</span>
+        <span className=" text-xs text-muted-foreground text-center">
+          Zerado em: 04/01/2023
         </span>
       </div>
     </div>
