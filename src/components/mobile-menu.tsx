@@ -5,7 +5,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Gamepad2, Home, LogOut, Menu } from 'lucide-react'
+import { Gamepad2, Home, LogOut, Menu, PlusCircle } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function MobileMenu() {
   return (
@@ -22,6 +23,13 @@ export default function MobileMenu() {
           <DropdownMenuItem className="flex gap-2">
             <Gamepad2 size={12} />
             Meus Jogos
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link to="/register-game" className="flex gap-2">
+              <PlusCircle size={12} />
+              Cadastrar Jogo
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem className="flex gap-2">

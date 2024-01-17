@@ -5,7 +5,9 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu'
 import { Separator } from './ui/separator'
-import { Gamepad2, Home } from 'lucide-react'
+import { Gamepad2, Home, PlusCircle } from 'lucide-react'
+import { Button } from './ui/button'
+import { Link } from 'react-router-dom'
 
 export default function DesktopMenu() {
   return (
@@ -26,6 +28,15 @@ export default function DesktopMenu() {
             <Gamepad2 size={16} />
             Meus Jogos
           </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <Button asChild className="rounded">
+            <Link to="/register-game" className="flex gap-2 items-center">
+              <PlusCircle size={18} />
+              Cadastrar Jogo
+            </Link>
+          </Button>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
