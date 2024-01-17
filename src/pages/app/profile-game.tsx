@@ -17,17 +17,19 @@ export default function ProfileGame() {
             <div className="flex flex-col gap-4">
               <span className="font-bold">O que eu achei?</span>
               <p className="text-muted-foreground">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                Lorem Ipsum simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
               </p>
             </div>
             <div className="flex flex-col gap-2 items-center">
               <span>Média:</span>
-              <span className="text-5xl font-bold text-lime-500">8.9</span>
+              <span className="text-2xl font-bold text-lime-500 sm:text-5xl">
+                8.9
+              </span>
             </div>
           </div>
 
