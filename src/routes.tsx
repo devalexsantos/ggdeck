@@ -3,7 +3,7 @@ import Dashboard from './pages/app/profile-dashboard'
 import AppLayout from './pages/_layout/profile-app'
 import ProfileGame from './pages/app/profile-game'
 import RegisterGame from './pages/app/register-game'
-import AuthProvider from './providers/clerk'
+import AuthProvider from './services/clerk'
 
 export const router = createBrowserRouter([
   {
