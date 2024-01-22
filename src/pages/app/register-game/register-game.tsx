@@ -7,13 +7,18 @@ import z from 'zod'
 import { api } from '@/services/api'
 import { useQuery } from '@tanstack/react-query'
 import { useState } from 'react'
-import GameItemSearched from '@/components/game-item-searched'
+import GameItemSearched from '@/components/game-item-searched/game-item-searched'
 
 interface GameSearched {
   results: {
     id: number
     name: string
     background_image: string
+    platforms: {
+      platform: {
+        name: string
+      }
+    }[]
   }[]
 }
 
@@ -93,7 +98,9 @@ export default function RegisterGame() {
           data.results.map((game) => (
             <GameItemSearched
               key={game.id}
+              id={game.id}
               name={game.name}
+              platforms={game.platforms}
               background_image={game.background_image}
             />
           ))}
